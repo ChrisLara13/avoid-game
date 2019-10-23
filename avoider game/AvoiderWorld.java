@@ -29,4 +29,10 @@ public class AvoiderWorld extends World
             super.addObject(e, x, y);
         }
     }
+    
+    public void endGame()
+    {
+        AvoiderGameOverWorld go = new AvoiderGameOverWorld();
+        Greenfoot.setWorld(go);
+    }
 }
